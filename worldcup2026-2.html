@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogItmD2KPYsyDYp9mE2LnYp9mE2YUgRklGQSAyMDI2IiwKICAic2hvcnRfbmFtZSI6ICJXb3JsZCBDdXAgMjYiLAogICJkZXNjcmlwdGlvbiI6ICLYrNiv2YjZhCDZhdio2KfYsdmK2KfYqiDZg9ij2LMg2KfZhNi52KfZhNmFIEZJRkEgMjAyNiDYp9mE2YPYp9mF2YQiLAogICJzdGFydF91cmwiOiAiLiIsCiAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsCiAgIm9yaWVudGF0aW9uIjogInBvcnRyYWl0IiwKICAiYmFja2dyb3VuZF9jb2xvciI6ICIjMGExNjI4IiwKICAidGhlbWVfY29sb3IiOiAiIzBhMTYyOCIsCiAgImxhbmciOiAiYXIiLAogICJkaXIiOiAicnRsIiwKICAiaWNvbnMiOiBbCiAgICB7InNyYyI6ICJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQU1BQUFBREFDQUlBQUFEZHZ2dFFBQUFFazBsRVFWUjRuTzNkM1kzYk9CaUdVYzlpcjFKQUVHd0ZxU2hGcHJBZ1pleUZnWUZpVzcrdlluMGt6N25PeUpUNWlKS1ZzZWJqeTlmdk56anFuNnNIUU5zRVJFUkFSUDQ5YTBPL2ZuNDdhMU84eDM4L2Z1Y2IrVWd1b2tYVGpjTXhIUXhJT2wwNmtOSHVnS1RUdlYwWjdRdG9vWjVUVHFpODB5bXp1VFdndVJmVFRRZVN5ZDBVME1zWGtFNW5qczN5ZWtEUDI1Vk94L1pPOThxTlJQV001bmwrbHo4MkxhMUFEejhwbmFGc25QMnQvNVdobnRGc25QSFpnTnp2WVdxdWg5Y0JPWGx4ZTVyM2x3MnRuOExVTTdMVjJYOFJrSk1YYzU3YldGbUJMRC9zdXc5aytXSFpReUZMSzVEbGg3dUZFdnhLS3hFQkVma2pvT25wemZtTHFXa1AwMDZzUUVRRVJFUkFSQVJFUkVCRUJFUkVRRVFFUkVSQVJBUkVSRUJFQkVSRVFFUUVSRVJBUkFSRVJFQkVCRVJFUUVRRVJFUkFSQVJFUkVCRVR2dGJHZDFZZlRxQWI4eE5DZWgyMi9sSUNWKy9uQm82b1B4UkpKOWJHTGFrUVFNNi9TazI5dzBPbU5Gd0FmM1ZCeUFObU5GWW44TGU4L2lzb1I3U05jb0s5T1pKSFdjcEdtSUZ1bXBKR0dFcDZqK2dhMmV4KzRZNkQ2akMvRlVZdzkvVGMwQjFacTdPU0U3WGJVRFY1cXphZU03U1owQTFaNnZtcUVJZEJsUjVuaXFQN1pnT0ErS2RlZ3VvL2lGZWY0UzdsTHNUdmZwWFdoZitRU3R6OCt2bnQ0VXhiOS9mQ25wYmdYaXpmZ0pxWmZtNWEydTBDL29KaUV0MEVsQ0xCM1NMWTM3V1NVQmNwVnhBeng4eHBrZHE4WThrQjdTK3YrVUNPcURkYzBHN0kvL1VRMEJjU0VCRUtnWTBkMWxRLzRMZ21LYjN0MkpBTDgxZExyUitHZEg2ZmhVTmFNdWhWdkJ3UEt6ZC9TMGFFSzJvRzlEeUFWZnpjRXcwdXI5MUE3ck52MnRsMzgxUWkvdGI3dmVCSHR6ZnUzRWVndEhjL2xZUDZLNysrM2l1aHZhMzlDbU0rZ1JFUkVCRUJFU2srWUFhdXQ1OHFmWHhOeDhRMXhJUUVRRVI2U0dnZGk4ajJoMzVweDRDNGtJQ0l0SkpRQzJlQzFvYzg3Tk9BdUlxL1FUVTFnSGQxbWdYOUJNUWwrZ3FvRllPNjFiR3VVVlhBZDFhbUp2Nkk5eWx0NEI0c3c0RHFueUlWeDdiTVIwR2RLczZUelZIRmVvem9GdTkyYW8ybnJOMEc5Q3QwcHpWR2NucGVnNklOeEFRRVFFUkVSQVJBUkVSRUJFQkVSRVFFUUVSYWVQNVFJZnR2UVc4OGRtb0hkOVozc3NLUkVSQVJBUkVSRUJFQkVSRVFFUUVSRVJBUkFSRVJFQkVCRVJFUUVRRVJFUkFSQVJFUkVCRUJFUkVRRVFFUkVSQVJBUkVSRUJFbXY5YXo4WXY0bFIrMGFhL0pHUUZJaUlnSWdJaUlpQWlBaUlpSUNJQ0lpSWdJZ0lpMHZ5ZDZLWnY0M2JBQ2tSRVFFUUVSRVJBUkFSRVJFQkVCRVJFUUVRRVJFUkFSQVJFUkVCRUJFUkVRRVFFUkVSQVJBUkVSRUJFQkVSRVFFUUVSRVJBUlA0SWFQb1ZtVXNlM0VSWjB4Nm1uVmlCaUFpSXlGSkF6bUxjTFpUd0dKQnZDclBzb1pDVlU1aEZpT1VHWGdSa0VXTE9jeHZyRjlFV29aR3R6djdyZ0I1QzA5Q1lIdWI5NWFscGRnVnlJbU5xcm9ldDk0RXNRcVBaT09NZlg3NSszN1VWSzFQM2RrMzZ5Z3IwL0pPV29yN3RYVEpXVnFDNWphNXVsK1ljbStWTkFjMXRmY3NMVUY4eXVWc0RXbjZsalM5R0thZk01cjZBbGwrVlB1eGFDM1lIZENlakxoMDRqUndNNkU1RzNUaDhCUklGTkNXbTVweHkyWHBhUUl6SnI3UVNFUkNSL3dGTnExU3cxKytaYXdBQUFBQkpSVTVFcmtKZ2dnPT0iLCAic2l6ZXMiOiAiMTkyeDE5MiIsICJ0eXBlIjogImltYWdlL3BuZyIsICJwdXJwb3NlIjogImFueSBtYXNrYWJsZSJ9LAogICAgeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFnQUFBQUlBQ0FJQUFBQjdHa090QUFBTldVbEVRVlI0bk8zZDJYSGtSaGFHMGRJRW4yU0Fvb01XeUNJYTJZWjF0Qm56VUlvU3hSVkxMamZ4bi9NOHd3YVJ3UDJRS0pMNjQ4Ky8vcjRCa09kL3N3OEFnRGtFQUNDVUFBQ0VFZ0NBVUFJQUVFb0FBRUlKQUVBb0FRQUlKUUFBb1FRQUlKUUFBSVI2bW4wQWpmMzYrV1AySVFCWDl2enllL1loTlBQSDBuOE16cmdIcGxzM0Nlc0Z3TkFIeWxvckJzc0V3TndIRnJKRUNhb0h3TndIbGxhNUJIVURZUFFEbDFFekErVUNZTzRERjFhcUJJVUNZUFFESVlwa29Nb3ZncG4rUUk0aUUyLytEcURJaVFBWWIrNVdZR1lBakg2QTI3d01USHNGWlBvRDNNMmFoM04yQVAyKzJ5SWZyUUJYZGFYeE5Ub0F6YytkaVE5TXRQUk1HeHFBVm1mSzBBY0tXbTdFalF0QWsxTmo5QVBGTFRUckJnWGc1Qmt4OTRIbDFKOTdJd0p3NWl3WS9jRFNLZy9BdmdHby9KMERERk56R0hZTXdPRnYyT2dITHFuYVZLenl0NEFlVEgvZ3Fxck50MTQ3Z0FPaHEzWnFBRG9wTWlHNzdBQ0tmRzhBTlIyWWVEMStBN2w5QUV4L2dHOVZhRURqVjBCN2o4L29COEpOSEpzdGR3Q21QOEJlZXlkaHczM0F0SjhDTXYwQjdwYi83d0hzaXBMcEQvRGFycW5ZYWhQUUpnQ21QOEJKNHh2UUlBQ21QMEFUZ3hzdzlETUEweC9nYXlQbjVOa0ErRS83QXN4eWNnS1Ayd0Y0L0FmWVl0aTBQQldBN2ZFeC9RRzIyejR6ejJ3Q2pnZkE5QWZvWjBBRHl2MDVhQURHT0JnQWovOEF2ZlhlQlBUZEFaaitBR2QwbmFKZUFRR0VPaEtBalhzTmovOEE1MjJjcFFmZUF0a0JBSVRhSFFDUC93Q0RkZG9FMkFFQWhPb1NBSS8vQUczMW1LdjdBdUJQdndGVXRtdEtld1VFRUtwOUFMei9BZWloK1hUZEVRRHZmd0RxMno2ckcrOEFQUDREOU5OMnh2b01BQ0NVQUFDRTJob0FId0FBckdManhHNjVBL0FCQUVCdkRTZXRWMEFBb1FRQUlKUUFBSVFTQUlCUW13S3c1UU5sbndBRGpMRmwzbTZaMjNZQUFLRUVBQ0NVQUFDRUVnQ0FVQUlBRUVvQUFFSUpBRUFvQVFBSUpRQUFvUVFBSUpRQUFJUVNBSUJRQWdBUVNnQUFRZ2tBUUNnQkFBZ2xBQUNoQkFBZ2xBQUFoQklBZ0ZBQ0FCQktBQUJDQ1FCQUtBRUFDQ1VBQUtFRUFDQ1VBQUNFRWdDQVVBSUFFRW9BQUVJSkFFQW9BUUFJSlFBQW9RUUFJSlFBQUlRU0FJQlFBZ0FRU2dBQVFna0FRQ2dCQUFnbEFBQ2hCQUFnbEFBQWhCSUFnRkFDQUJCS0FBQkNDUUJBS0FFQUNDVUFBS0VFQUNDVUFBQ0VFZ0NBVUFJQUVFb0FBRUlKQUVBb0FRQUlKUUFBb1FRQUlOVFQ3QU9BN243OS9ISHMvL2o4OHJ2dGtVQXBBc0RWSEI3M1c3NlVKSEFsQXNEeUdrNzh2ZitXSHJBMEFXQkpJNGYrRjE0ZmhoaXdIQUZnSlVYbS9vY2V4NllFckVJQVdFRGx1ZitlRXJBS0FhQzB0VWIvRy9lRGx3SEtFZ0NLV25yMHZ5WURsQ1VBMUhLWnVmK0c5MElVSkFCVWNkWFIvNFlOQVhYNFV4Q1VFREw5SDlLK1gycXlBMkN5MkZGb0s4QjBBc0Ewc2FQL05SbGdJcStBbU1QMGY4M1pZQW83QUVZejdENWtLOEI0ZGdBTVpmcC96ZmxoSkRzQUJqSGFOcklWWUJnN0FFWXcvZmR5eGhoQUFPak9MRHZHZWFNM3I0RG95QWc3eWVzZ3VySURvQmZUdnhWbmtrNEVnQzdNckxhY1Qzb1FBTm96clhwd1ZtbE9BR2pNbk9ySHVhVXRBYUFsRTZvM1o1aUdCSUJtektZeG5HZGFFUURhTUpWR2NyWnBRZ0Jvd0R3YXp6bm5QQUhnTEpOb0ZtZWVrd1NBVTh5Z3VaeC96aEFBampOOUtyQUtIQ1lBSEdUdTFHRXRPRVlBQUVJSkFFZDQ1S3pHaW5DQUFMQ2JXVk9UZFdFdkFXQWZVNll5cThNdUFnQVFTZ0RZd1FObWZkYUk3UVNBclV5V1ZWZ3BOaElBZ0ZBQ3dDWWVLdGRpdmRoQ0FQaWVhYklpcThhM0JBQWcxTlBzQStESWs5cnp5Kzh4WCszWUY2U0lYejkvTkYvY2tkY2V2ZGtCQUlRU0FMN2k4WDkxVnBBdkNBQ2ZNanV1d1RyeUdRRUFDQ1VBZk14ajQ1VllUVDRrQUFDaEJBQWdsQUR3QVc4TXJzZWE4cDRBekRmM2QySDhKazR5MTE0NEFlQXRqNHBYWldWNVF3Q1c5Tm1kN0E2bk45ZmVsUWdBLytFMnZqYnJ5MnNDQUJCS0FBQkNDUUQvOG40Z2dWWG1RUUJLbVBYemNINE9EOWRlTWdFQUNDVUEvTU9iZ1J6V21qc0JXTlg3ZTloZHpSaXV2Y3NRZ0NyR3Z4TDFFcFk3MTE0c0FRQUlKUURjYnJid2VhdzROd0VvWmUrKytQVTl2UGQrdGdmbk5kZGVKZ0VBQ0NVQWE3cy9mTm5PTTU1cjd3SUVvSllEdStNRGQ2QTlPTys1OWdJSkFCN2lRbGwzQkFBZ2xBQ1UwM3VQYkEvT1oxeDdhUVFBSUpRQVZOVHZRY2tqR0Y5ejdVVVJBSUJRQWxCVWo4ZWxENyttSHdWSjl1SHFEN3YybUU0QTZtcDd6N2dEMmM2MUYwSUFBRUlKUUdtdEhwMDhnckdYYXkrQkFGUjMvdjV4QjNLTWErL3lCR0FCWis0aWR5Qm51UGF1VFFEV2NPeGVjZ2R5bm12dndnUmdHWHZ2S0hjZ3JiajJydXBwOWdHd3cvMisrdlluOTkxK05PZmF1eVFCV004WHQ2TGJqNjVjZXhjakFLdHl2ekdMYSs4eWZBWUFFRW9BQUVJSkFFQW9BUUFJSlFBQW9RUUFJSlFBQUlRU0FJQlFBcERPTC9Va3MvcmhCQUFnbEFBQWhCSUFnRkFDQUJCS0FBQkNDUUIrRkNTVWRVY0FBRUlKQUVBb0FRQUlKUUFBb1FTQTI4M25nWG1zT0RjQkFJZ2xBQUNoQkFBZ2xBRHdEeStGYzFocjdnUUFJSlFBQUlRU0FQN2x6VUFDcTh5REFBQ0VFZ0NBVUFMQWYzZy9jRzNXbDljRUFDQ1VBUENXaDhTcnNySzhJUUFBb1FTQUQzaFV2QjVyeW5zQ0FCQktBQUJDQ1FBZjg4YmdTcXdtSHhJQWdGQUN3S2M4Tmw2RGRlUXpBc0JYekk3VldVRytJQUFBb1FTQWIzaUVYSmUxNDJzQ0FCQktBUGllQjhrVldUVytKUUJzWXBxc3hYcXhoUUFBaEJJQXR2SlF1UW9yeFVZQ3dBNG1TMzNXaU8wRUFDQ1VBTENQQjh6S3JBNjdDQUM3bVRJMVdSZjJFZ0NPTUd1cXNTSWNJQUFBb1FTQWd6eHkxbUV0T0VZQU9NN2NxY0FxY0pnQWNJcnBNNWZ6enhrQ3dGbG0wQ3pPUENjSkFBMllST001NTV3bkFMUmhIbzNrYk5PRUFOQ01xVFNHODB3ckFrQkxabE52empBTkNRQ05tVkQ5T0xlMEpRQUFvUVFBSUpRQUFJUVNBSUJRQWdBUVNnQUFRZ2tBUUNnQkFBZ2xBQUNoQkFBZ2xBQUFoQklBZ0ZBQ0FCQktBQUJDQ1FCQUtBRUFDQ1VBQUtFRUFDQ1VBQUNFRWdDQVVBSUFFRW9BQUVJOXpUNEFMdWo1NWZlVWYvZlh6eDlqL3FGWjN5QzBaUWNBRUVvQUFFSUpBRUFvQVFBSUpRQUFvUVFBSUpRQUFJUVNBSUJRQWdBUVNnQUFRZ2tBUUNnQkFBZ2xBQUNoQkFBZ2xBQUFoQklBZ0ZBQ0FCQktBQUJDQ1FCQUtBRUFDQ1VBQUtFRUFDQ1VBQUNFRWdDQVVBSUFFRW9BQUVJSkFFQW9BUUFJSlFBQW9RUUFJSlFBQUlRU0FJQlFBZ0FRU2dBQVFna0FRQ2dCQUFnbEFBQ2hCQUFnbEFBQWhCSUFnRkFDQUJCS0FBQkNDUUJBS0FFQUNDVUFBS0VFQUNDVUFBQ0VFZ0NBVUFJQUVFb0FBRUlKQUVBb0FRQUlKUUFBb1FRQUlKUUFBSVFTQUlCUUFnQVFTZ0FBUWdrQVFDZ0JBQWdsQUFDaEJBQWcxTlBzQTJDeVh6OS96RDZFOVZ6cHBEMi8vSjU5Q0V4akJ3QVFTZ0FBUWdrQVFDZ0JBQWdsQUFDaEJBQWdsQUFBaEJJQWdGQUNBQkJLQUFCQ0NRQkFLQUVBQ0NVQUFLRUVBQ0NVQUFDRUVnQ0FVQUlBRUVvQUFFSUpBRUFvQVFBSUpRQUFvUVFBSUpRQUFJUVNBSUJRQWdBUTZtbjJBVERaODh2djJZY0F6R0VIQUJCS0FBQkNDUUJBS0FFQUNDVUFBS0VFQUNDVUFBQ0VFZ0NBVUFJQUVFb0FBRUlKQUVBb0FRQUlKUUFBb1FRQUlKUUFBSVFTQUlCUUFnQVFTZ0FBUWdrQVFDZ0JBQWdsQUFDaEJBQWdsQUFBaEJJQWdGQUNBQkJLQUFCQ0NRQkFLQUVBQ0NVQUFLRUVBQ0NVQUFDRUVnQ0FVQUlBRUVvQUFFSUpBRUFvQVFBSUpRQUFvUVFBSUpRQUFJUVNBSUJRQWdBUVNnQUFRZ2tBUUNnQkFBZ2xBQUNoQkFBZ2xBQUFoQklBZ0ZBQ0FCQktBQUJDQ1FCQUtBRUFDQ1VBQUtFRUFDQ1VBQUNFMmhTQTU1ZmYzLzV2ZnYzOGNmcGdBUGplbG5tN1pXN2JBUUNFRWdDQVVBSUFFRW9BQUVLMURJRFBnUUY2YXpocHR3Wmd5d2ZLQUZTd2NXSjdCUVFRU2dBQVFqVU9nSThCQVBwcE8yTjNCTURIQUFEMWJaL1Y3VjhCMlFRQTlOQjh1dm9NQUNEVXZnQjRDd1JRMmE0cDNXVUg0QzBRUUZzOTVxcFhRQUNoZGdkZzQvN0NKZ0NnbFkwVGRlOWJlanNBZ0ZCSEFtQVRBREJNcDhmL214MEFRS3krQWJBSkFEaWo2eFE5R0lEdGV3ME5BRGhtKy93ODlrdGFYZ0VCaERvZUFKc0FnSDU2UC83ZlR1NEFOQUNnaHdIVC96YnlGWkFHQUd3eGJGcWVEWUEvRHdjd3k4a0pQUFJEWUpzQWdLK05uSk1OQXJBclFSb0E4SmxkRS9MOEM1ZzJPd0FOQURocDhQUy9OWHdGcEFFQWg0MmYvcmVKdndpbUFRQjNzK1poeXdEc2paSUdBT3lkaEExLzl2S1BQLy82dTlYWHVqc3cxdjBzS1JCbytyUnMvd3Jvd1BIWkNnQnBway8vVzZmUEFEUUE0QXNWcHYrdHh5dWdoMk16M2VzZzRNSktEY1p5Znc3YVZnQzRxbXJ6cmVNTzRIYnV1N1VWQUM2ajVqRHNHNEM3bXQ4NXdBQ1ZCK0NJQU54T2IzeGtBRmhPL2JrM0tBQzNSaSsvbEFBb2JxRlpOeTRBdDNZZmdNZ0FVTkJ5STI1b0FHNGRQZ1FYQTJDaXBXZmE2QURjOWZ0WktEMEF1cnJTK0pvVGdGdTluNGNGbUdqS3crdTBYd1R6cUE1d04yc2VUdHNCUE5nS0FMSG1QZ3JQRDhDZERBQlJLcndGcWZLM2dDcWNDNEF4aWt5OEtqdUFCMXNCNE1LS2pQNjdjZ0Y0VUFMZ01rck4vWWU2QWJpVEFXQnBOVWYvWGZVQVBDZ0JzSkRLYy85aG1RQThLQUZRMWhKei8yRzlBTHdtQnNCMGF3MzkxOVlPd0h1U0FIUzE3cmgvNzJvQkFHQ2pLcjhJQnNCZ0FnQVFTZ0FBUWdrQVFDZ0JBQWdsQUFDaEJBQWdsQUFBaEJJQWdGQUNBQkRxL3dsVlF2U1RZSHpXQUFBQUFFbEZUa1N1UW1DQyIsICJzaXplcyI6ICI1MTJ4NTEyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIiwgInB1cnBvc2UiOiAiYW55IG1hc2thYmxlIn0KICBdCn0=">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="World Cup 26">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0a1628">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAAEk0lEQVR4nO3d3Y3bOBiGUc9ir1JAEGwFqShFprAgZeyFgYFiW7+vYn0kz7nOyJT5iJKVsebjy9fvNzjqn6sHQNsERERARP49a0O/fn47a1O8x38/fucb+UguokXTjcMxHQxIOl06kNHugKTTvV0Z7QtooZ5TTqi80ymzuTWguRfTTQeSyd0U0MsXkE5njs3yekDP25VOx/ZO98qNRPWM5nl+lz82La1ADz8pnaFsnP2t/5WhntFsnPHZgNzvYWquh9cBOXlxe5r3lw2tn8LUM7LV2X8RkJMXc57bWFmBLD/suw9k+WHZQyFLK5Dlh7uFEvxKKxEBEfkjoOnpzfmLqWkP006sQEQERERARAREREBEBEREQEQERERARAREREBEBEREQEQERERARAREREBEBEREQEQERERARAREREBETvtbGd1YfTqAb8xNCeh22/lICV+/nBo6oPxRJJ9bGLakQQM6/Sk29w0OmNFwAf3VByANmNFYn8Le8/isoR7SNcoK9OZJHWcpGmIFumpJGGEp6j+ga2ex+4Y6D6jC/FUYw9/Tc0B1Zq7OSE7XbUDV5qzaeM7SZ0A1Z6vmqEIdBlR5niqP7ZgOA+Kdeguo/iFef4S7lLsTvfpXWhf+QStz8+vnt4Uxb9/fCnpbgXizfgJqZfm5a2u0C/oJiEt0ElCLB3SLY37WSUBcpVxAzx8xpkdq8Y8kB7S+v+UCOqDdc0G7I//UQ0BcSEBEKgY0d1lQ/4LgmKb3t2JAL81dLrR+GdH6fhUNaMuhVvBwPKzd/S0aEK2oG9DyAVfzcEw0ur91A7rNv2tl381Qi/tb7veBHtzfu3EegtHc/lYP6K7++3iuhva39CmM+gREREBEBESk+YAaut58qfXxNx8Q1xIQEQER6SGgdi8j2h35px4C4kICItJJQC2eC1oc87NOAuIq/QTU1gHd1mgX9BMQl+gqoFYO61bGuUVXAd1amJv6I9ylt4B4sw4DqnyIVx7bMR0GdKs6TzVHFeozoFu92ao2nrN0G9Ct0pzVGcnpeg6INxAQEQERERARAREREBEBEREQEQERaeP5QIftvQW88dmoHd9Z3ssKRERARAREREBEBEREQEQERERARAREREBEBEREQEQERERARAREREBEBEREQEQERERARAREREBEmv9az8Yv4lR+0aa/JGQFIiIgIgIiIiAiAiIiICICIiIgIgIi0vyd6KZv43bACkREQEQERERARAREREBEBEREQEQERERARAREREBEBEREQEQERERARAREREBEBEREQEQERERARP4IaPoVmUse3ERZ0x6mnViBiAiIyFJAzmLcLZTwGJBvCrPsoZCVU5hFiOUGXgRkEWLOcxvrF9EWoZGtzv7rgB5C09CYHub95alpdgVyImNqroet94EsQqPZOOMfX75+37UVK1P3dk36ygr0/JOWor7tXTJWVqC5ja5ul+Ycm+VNAc1tfcsLUF8yuVsDWn6ljS9GKafM5r6All+VPuxaC3YHdCejLh04jRwM6E5G3Th8BRIFNCWm5pxy2XpaQIzJr7QSERCR/wFNq1Sw1++ZawAAAABJRU5ErkJggg==">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>جدول كأس العالم FIFA 2026</title>
+<style>
+  /* ── Reset & Base ── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --gold: #f0c040;
+    --gold-dark: #c8960a;
+    --navy: #0a1628;
+    --navy2: #0f2540;
+    --navy3: #1a3a5c;
+    --text: #e8f0fe;
+    --muted: #7a9cbf;
+    --card: rgba(255,255,255,0.05);
+    --border: rgba(255,255,255,0.08);
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    background: linear-gradient(160deg, var(--navy) 0%, var(--navy2) 50%, var(--navy) 100%);
+    color: var(--text);
+    min-height: 100vh;
+    font-size: 14px;
+  }
+
+  /* ── Header ── */
+  .header {
+    background: linear-gradient(135deg, #0d2137, var(--navy3));
+    border-bottom: 2px solid var(--gold);
+    padding: 16px;
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+  }
+  .header-inner { max-width: 860px; margin: 0 auto; }
+  .header-top {
+    display: flex; align-items: center; gap: 12; margin-bottom: 14px;
+  }
+  .trophy { font-size: 30px; }
+  .title-wrap { flex: 1; }
+  .title { font-size: 18px; font-weight: 800; color: var(--gold); line-height: 1.2; }
+  .subtitle { font-size: 11px; color: var(--muted); margin-top: 3px; }
+  .match-count { text-align: left; }
+  .match-count .num { font-size: 24px; font-weight: 800; color: var(--gold); }
+  .match-count .lbl { font-size: 10px; color: var(--muted); }
+
+  /* ── Stage Tabs ── */
+  .tabs {
+    display: flex; gap: 6px;
+    overflow-x: auto; padding-bottom: 2px;
+    scrollbar-width: none;
+  }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab {
+    background: rgba(255,255,255,0.06);
+    color: var(--muted);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: inherit;
+    transition: all 0.2s;
+  }
+  .tab.active {
+    background: linear-gradient(135deg, var(--gold), #e6a800);
+    color: var(--navy);
+    border-color: transparent;
+    font-weight: 700;
+  }
+
+  /* ── Group Filter ── */
+  .group-filters {
+    display: flex; gap: 6px; flex-wrap: wrap;
+    padding: 14px 16px 6px;
+    max-width: 860px; margin: 0 auto;
+  }
+  .gf-btn {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.15);
+    color: var(--muted);
+    border-radius: 16px; padding: 4px 12px;
+    font-size: 12px; cursor: pointer;
+    font-family: inherit; font-weight: 600;
+    transition: all 0.15s;
+  }
+  .gf-btn.active {
+    border-color: var(--gold);
+    color: var(--gold);
+    background: rgba(240,192,64,0.1);
+  }
+
+  /* ── Content ── */
+  .content { max-width: 860px; margin: 0 auto; padding: 16px; }
+
+  /* ── Date Header ── */
+  .date-header {
+    display: flex; align-items: center; gap: 10; margin-bottom: 10px; margin-top: 20px;
+  }
+  .date-header:first-child { margin-top: 0; }
+  .date-pill {
+    background: linear-gradient(135deg, var(--navy3), #0f2540);
+    color: var(--gold);
+    padding: 4px 14px; border-radius: 20px;
+    font-weight: 700; font-size: 12px;
+    border: 1px solid rgba(240,192,64,0.3);
+    white-space: nowrap;
+  }
+  .date-line { flex: 1; height: 1px; background: var(--border); }
+
+  /* ── Match Card ── */
+  .match-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 11px 14px;
+    display: flex; align-items: center; gap: 10;
+    margin-bottom: 7px;
+  }
+  .match-card.knockout {
+    border-color: rgba(240,192,64,0.15);
+  }
+  .group-badge {
+    border-radius: 7px; padding: 2px 8px;
+    font-size: 11px; font-weight: 700;
+    min-width: 26px; text-align: center; flex-shrink: 0;
+  }
+  .ko-badge {
+    background: rgba(240,192,64,0.1);
+    border: 1px solid rgba(240,192,64,0.3);
+    color: var(--gold);
+    border-radius: 7px; padding: 2px 7px;
+    font-size: 10px; font-weight: 700;
+    min-width: 30px; text-align: center; flex-shrink: 0;
+  }
+  .match-info { flex: 1; min-width: 0; }
+  .match-teams {
+    font-weight: 700; font-size: 13px; color: white;
+    margin-bottom: 3px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .vs { color: rgba(255,255,255,0.25); margin: 0 4px; }
+  .match-venue {
+    font-size: 11px; color: var(--muted);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .match-time-col { text-align: left; flex-shrink: 0; }
+  .match-date-small { font-size: 10px; color: var(--muted); margin-bottom: 2px; }
+  .time-badge {
+    font-size: 12px; font-weight: 700; color: var(--gold);
+    background: rgba(240,192,64,0.1);
+    border: 1px solid rgba(240,192,64,0.2);
+    padding: 2px 9px; border-radius: 8px;
+  }
+
+  /* ── Final Stage ── */
+  .final-hero {
+    background: linear-gradient(135deg, #1a2540, #0d1a30);
+    border: 2px solid var(--gold);
+    border-radius: 16px; padding: 24px;
+    text-align: center; margin-bottom: 16px;
+  }
+  .final-icon { font-size: 40px; margin-bottom: 8px; }
+  .final-title { color: var(--gold); font-size: 18px; font-weight: 800; margin-bottom: 4px; }
+  .final-date { color: var(--muted); font-size: 12px; margin-bottom: 14px; }
+  .final-teams { font-size: 20px; font-weight: 800; color: white; margin-bottom: 8px; }
+  .final-venue { color: var(--muted); font-size: 12px; }
+
+  /* ── Summary Table (for print) ── */
+  .stage-info {
+    display: flex; gap: 8; flex-wrap: wrap; margin-bottom: 16px;
+  }
+  .stage-chip {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px;
+    font-size: 11px; flex: 1; min-width: 120px; text-align: center;
+  }
+  .stage-chip .sc-title { color: var(--muted); margin-bottom: 3px; }
+  .stage-chip .sc-val { color: var(--gold); font-weight: 700; font-size: 13px; }
+
+  /* ── Footer ── */
+  footer {
+    text-align: center; padding: 14px;
+    color: rgba(147,180,212,0.5); font-size: 11px;
+    border-top: 1px solid var(--border);
+    margin-top: 10px;
+  }
+
+  /* ── PRINT STYLES ── */
+  @media print {
+    @page {
+      size: A4;
+      margin: 12mm 10mm;
+    }
+    body {
+      background: white !important;
+      color: #111 !important;
+      font-size: 9pt;
+    }
+    .header {
+      position: static;
+      background: #0a1628 !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+      border-bottom: 2pt solid #c8960a;
+      padding: 10px;
+      margin-bottom: 6px;
+    }
+    .title { font-size: 14pt !important; }
+    .subtitle, .match-count .lbl { font-size: 8pt !important; }
+    .tabs { display: none !important; }
+    .group-filters { display: none !important; }
+    .stage-section { display: block !important; }
+    .stage-hidden { display: none !important; }
+    /* Show all stages when printing */
+    .print-stage-title {
+      font-size: 13pt;
+      font-weight: 800;
+      color: #0a1628;
+      border-bottom: 2pt solid #c8960a;
+      padding-bottom: 4px;
+      margin: 14px 0 8px;
+    }
+    .match-card {
+      background: #f8f9fa !important;
+      border: 0.5pt solid #ccc !important;
+      border-radius: 4px !important;
+      margin-bottom: 3px !important;
+      padding: 6px 10px !important;
+      break-inside: avoid;
+    }
+    .match-card.knockout { border-color: #c8960a !important; }
+    .match-teams { color: #111 !important; font-size: 9pt !important; }
+    .match-venue { color: #555 !important; font-size: 8pt !important; }
+    .match-date-small { color: #777 !important; }
+    .time-badge {
+      background: #fff3cd !important;
+      border-color: #c8960a !important;
+      color: #856404 !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .group-badge {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .ko-badge {
+      background: #fff3cd !important;
+      border-color: #c8960a !important;
+      color: #856404 !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .date-pill {
+      background: #0a1628 !important;
+      color: #f0c040 !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+      border: none !important;
+    }
+    .final-hero {
+      background: #fff3cd !important;
+      border: 1pt solid #c8960a !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .final-title, .final-teams { color: #0a1628 !important; }
+    .final-date, .final-venue { color: #555 !important; }
+    .stage-chip { background: #f0f0f0 !important; border-color: #ccc !important; }
+    .stage-chip .sc-val { color: #0a1628 !important; }
+    .stage-chip .sc-title { color: #555 !important; }
+    footer { color: #777 !important; border-top: 0.5pt solid #ccc !important; }
+    .print-btn { display: none !important; }
+    .date-line { background: #ccc !important; }
+    .vs { color: #999 !important; }
+  }
+
+  /* ── Mobile tweaks ── */
+  @media (max-width: 480px) {
+    .header { padding: 12px; }
+    .title { font-size: 15px; }
+    .content { padding: 12px; }
+    .match-card { padding: 9px 11px; }
+    .match-teams { font-size: 12px; }
+  }
+
+  /* Print button */
+  .print-btn {
+    background: rgba(240,192,64,0.15);
+    color: var(--gold);
+    border: 1px solid rgba(240,192,64,0.35);
+    border-radius: 20px;
+    padding: 5px 11px;
+    font-size: 11px; font-weight: 700;
+    cursor: pointer; font-family: inherit;
+    display: flex; align-items: center; gap: 4px;
+    white-space: nowrap; flex-shrink: 0;
+    transition: background 0.2s;
+  }
+  .print-btn:active { background: rgba(240,192,64,0.28); }
+
+  /* Refresh button */
+  .refresh-btn {
+    background: rgba(255,255,255,0.06);
+    color: var(--muted);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 50%;
+    width: 28px; height: 28px;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; transition: all 0.2s;
+  }
+  .refresh-btn:active { transform: rotate(180deg); background: rgba(255,255,255,0.12); }
+
+  /* Install button */
+  .install-btn {
+    background: linear-gradient(135deg, #f0c040, #e6a800);
+    color: #0a1628;
+    border: none; border-radius: 20px;
+    padding: 5px 11px;
+    font-size: 11px; font-weight: 700;
+    cursor: pointer; font-family: inherit;
+    display: none; align-items: center; gap: 4px;
+    white-space: nowrap; flex-shrink: 0;
+  }
+  .install-btn:active { opacity: 0.85; }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <div class="header-inner">
+    <div class="header-top" style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
+      <div class="trophy">🏆</div>
+      <div class="title-wrap">
+        <div class="title">كأس العالم FIFA 2026</div>
+        <div class="subtitle">الولايات المتحدة · كندا · المكسيك &nbsp;|&nbsp; 11 يونيو – 19 يوليو 2026</div>
+      </div>
+      <div class="match-count">
+        <div class="num">104</div>
+        <div class="lbl">مباراة</div>
+      </div>
+      <button class="install-btn" id="install-btn" onclick="installApp()">📲 تثبيت</button>
+      <button class="print-btn" onclick="window.print()">🖨️ طباعة</button>
+      <button class="refresh-btn" onclick="refreshData()" title="تحديث النتائج">🔄</button>
+    </div>
+    <div class="tabs" id="tabs">
+      <button class="tab active" onclick="setStage('group')">دور المجموعات</button>
+      <button class="tab" onclick="setStage('r32')">دور الـ 32</button>
+      <button class="tab" onclick="setStage('r16')">دور الـ 16</button>
+      <button class="tab" onclick="setStage('qf')">ربع النهائي</button>
+      <button class="tab" onclick="setStage('sf')">نصف النهائي</button>
+      <button class="tab" onclick="setStage('third')">مباراة الثالث</button>
+      <button class="tab" onclick="setStage('final')">النهائي</button>
+    </div>
+    <div style="height:18px;margin-top:6px;font-size:11px;text-align:center;" id="sync-status"></div>
+  </div>
+</div>
+
+<!-- Group Filters -->
+<div class="group-filters" id="group-filters">
+  <button class="gf-btn active" onclick="setGroup('all')">الكل</button>
+  <button class="gf-btn" onclick="setGroup('A')" style="border-color:rgba(231,76,60,0.4);color:#e74c3c;">A</button>
+  <button class="gf-btn" onclick="setGroup('B')" style="border-color:rgba(230,126,34,0.4);color:#e67e22;">B</button>
+  <button class="gf-btn" onclick="setGroup('C')" style="border-color:rgba(241,196,15,0.4);color:#f1c40f;">C</button>
+  <button class="gf-btn" onclick="setGroup('D')" style="border-color:rgba(46,204,113,0.4);color:#2ecc71;">D</button>
+  <button class="gf-btn" onclick="setGroup('E')" style="border-color:rgba(26,188,156,0.4);color:#1abc9c;">E</button>
+  <button class="gf-btn" onclick="setGroup('F')" style="border-color:rgba(52,152,219,0.4);color:#3498db;">F</button>
+  <button class="gf-btn" onclick="setGroup('G')" style="border-color:rgba(155,89,182,0.4);color:#9b59b6;">G</button>
+  <button class="gf-btn" onclick="setGroup('H')" style="border-color:rgba(233,30,99,0.4);color:#e91e63;">H</button>
+  <button class="gf-btn" onclick="setGroup('I')" style="border-color:rgba(255,87,34,0.4);color:#ff5722;">I</button>
+  <button class="gf-btn" onclick="setGroup('J')" style="border-color:rgba(0,188,212,0.4);color:#00bcd4;">J</button>
+  <button class="gf-btn" onclick="setGroup('K')" style="border-color:rgba(139,195,74,0.4);color:#8bc34a;">K</button>
+  <button class="gf-btn" onclick="setGroup('L')" style="border-color:rgba(255,152,0,0.4);color:#ff9800;">L</button>
+</div>
+
+<!-- Content -->
+<div class="content" id="content"></div>
+
+<footer>⏰ أوقات المباريات بتوقيت مكة المكرمة (UTC+3) &nbsp;·&nbsp; FIFA World Cup 2026</footer>
+
+<script>
+const GC = {
+  A:"#e74c3c",B:"#e67e22",C:"#f1c40f",D:"#2ecc71",
+  E:"#1abc9c",F:"#3498db",G:"#9b59b6",H:"#e91e63",
+  I:"#ff5722",J:"#00bcd4",K:"#8bc34a",L:"#ff9800"
+};
+
+const groupMatches = [
+  {date:"11 يونيو",g:"A",t1:"المكسيك",t2:"جنوب أفريقيا",time:"11:00م",v:"إستاد أزتيكا، مكسيكو سيتي"},
+  {date:"11 يونيو",g:"A",t1:"كوريا الجنوبية",t2:"التشيك",time:"06:00ص",v:"إستاد أكرون، زاپوپان"},
+  {date:"12 يونيو",g:"B",t1:"كندا",t2:"البوسنة والهرسك",time:"11:00م",v:"BMO Field، تورنتو"},
+  {date:"12 يونيو",g:"D",t1:"الولايات المتحدة",t2:"باراغواي",time:"05:00ص",v:"SoFi Stadium، لوس أنجلوس"},
+  {date:"13 يونيو",g:"B",t1:"قطر",t2:"سويسرا",time:"11:00م",v:"Levi's Stadium، سانتا كلارا"},
+  {date:"13 يونيو",g:"C",t1:"البرازيل",t2:"المغرب",time:"02:00ص",v:"MetLife Stadium، نيوجيرسي"},
+  {date:"13 يونيو",g:"C",t1:"هايتي",t2:"اسكتلندا",time:"05:00ص",v:"Gillette Stadium، فوكسبورو"},
+  {date:"14 يونيو",g:"D",t1:"أستراليا",t2:"تركيا",time:"08:00ص",v:"BC Place، فانكوفر"},
+  {date:"14 يونيو",g:"E",t1:"ألمانيا",t2:"كوراساو",time:"09:00م",v:"NRG Stadium، هيوستن"},
+  {date:"14 يونيو",g:"F",t1:"هولندا",t2:"اليابان",time:"12:00ص",v:"AT&T Stadium، أرلينغتون"},
+  {date:"14 يونيو",g:"E",t1:"كوت ديفوار",t2:"الإكوادور",time:"03:00ص",v:"Lincoln Financial، فيلادلفيا"},
+  {date:"14 يونيو",g:"F",t1:"السويد",t2:"تونس",time:"06:00ص",v:"إستاد BBVA، مونتيري"},
+  {date:"15 يونيو",g:"H",t1:"إسبانيا",t2:"الرأس الأخضر",time:"08:00م",v:"Mercedes-Benz Stadium، أتلانتا"},
+  {date:"15 يونيو",g:"G",t1:"بلجيكا",t2:"مصر",time:"11:00م",v:"Lumen Field، سياتل"},
+  {date:"15 يونيو",g:"H",t1:"السعودية",t2:"الأوروغواي",time:"02:00ص",v:"Hard Rock Stadium، ميامي"},
+  {date:"15 يونيو",g:"G",t1:"إيران",t2:"نيوزيلندا",time:"05:00ص",v:"SoFi Stadium، لوس أنجلوس"},
+  {date:"16 يونيو",g:"I",t1:"فرنسا",t2:"السنغال",time:"11:00م",v:"MetLife Stadium، نيوجيرسي"},
+  {date:"16 يونيو",g:"I",t1:"العراق",t2:"النرويج",time:"02:00ص",v:"Gillette Stadium، فوكسبورو"},
+  {date:"16 يونيو",g:"J",t1:"الأرجنتين",t2:"الجزائر",time:"05:00ص",v:"Arrowhead Stadium، كانساس سيتي"},
+  {date:"17 يونيو",g:"J",t1:"النمسا",t2:"الأردن",time:"08:00ص",v:"Levi's Stadium، سانتا كلارا"},
+  {date:"17 يونيو",g:"K",t1:"البرتغال",t2:"الكونغو الديمقراطية",time:"09:00م",v:"NRG Stadium، هيوستن"},
+  {date:"17 يونيو",g:"L",t1:"إنجلترا",t2:"كرواتيا",time:"12:00ص",v:"AT&T Stadium، أرلينغتون"},
+  {date:"17 يونيو",g:"L",t1:"غانا",t2:"بنما",time:"03:00ص",v:"BMO Field، تورنتو"},
+  {date:"17 يونيو",g:"K",t1:"أوزبكستان",t2:"كولومبيا",time:"06:00ص",v:"إستاد أزتيكا، مكسيكو سيتي"},
+  {date:"18 يونيو",g:"A",t1:"التشيك",t2:"جنوب أفريقيا",time:"08:00م",v:"Mercedes-Benz Stadium، أتلانتا"},
+  {date:"18 يونيو",g:"B",t1:"سويسرا",t2:"البوسنة والهرسك",time:"11:00م",v:"SoFi Stadium، لوس أنجلوس"},
+  {date:"18 يونيو",g:"B",t1:"كندا",t2:"قطر",time:"02:00ص",v:"BC Place، فانكوفر"},
+  {date:"18 يونيو",g:"A",t1:"المكسيك",t2:"كوريا الجنوبية",time:"05:00ص",v:"إستاد أكرون، زاپوپان"},
+  {date:"19 يونيو",g:"D",t1:"الولايات المتحدة",t2:"أستراليا",time:"11:00م",v:"Lumen Field، سياتل"},
+  {date:"19 يونيو",g:"C",t1:"اسكتلندا",t2:"المغرب",time:"02:00ص",v:"Gillette Stadium، فوكسبورو"},
+  {date:"19 يونيو",g:"C",t1:"البرازيل",t2:"هايتي",time:"04:30ص",v:"Lincoln Financial، فيلادلفيا"},
+  {date:"19 يونيو",g:"D",t1:"تركيا",t2:"باراغواي",time:"07:00ص",v:"Levi's Stadium، سانتا كلارا"},
+  {date:"20 يونيو",g:"F",t1:"هولندا",t2:"السويد",time:"09:00م",v:"NRG Stadium، هيوستن"},
+  {date:"20 يونيو",g:"E",t1:"ألمانيا",t2:"كوت ديفوار",time:"12:00ص",v:"BMO Field، تورنتو"},
+  {date:"20 يونيو",g:"E",t1:"الإكوادور",t2:"كوراساو",time:"04:00ص",v:"Arrowhead Stadium، كانساس سيتي"},
+  {date:"21 يونيو",g:"F",t1:"تونس",t2:"اليابان",time:"08:00ص",v:"إستاد BBVA، مونتيري"},
+  {date:"21 يونيو",g:"H",t1:"إسبانيا",t2:"السعودية",time:"08:00م",v:"Mercedes-Benz Stadium، أتلانتا"},
+  {date:"21 يونيو",g:"G",t1:"بلجيكا",t2:"إيران",time:"11:00م",v:"SoFi Stadium، لوس أنجلوس"},
+  {date:"21 يونيو",g:"H",t1:"الأوروغواي",t2:"الرأس الأخضر",time:"02:00ص",v:"Hard Rock Stadium، ميامي"},
+  {date:"21 يونيو",g:"G",t1:"نيوزيلندا",t2:"مصر",time:"05:00ص",v:"BC Place، فانكوفر"},
+  {date:"22 يونيو",g:"J",t1:"الأرجنتين",t2:"النمسا",time:"09:00م",v:"AT&T Stadium، أرلينغتون"},
+  {date:"22 يونيو",g:"I",t1:"فرنسا",t2:"العراق",time:"01:00ص",v:"Lincoln Financial، فيلادلفيا"},
+  {date:"22 يونيو",g:"I",t1:"النرويج",t2:"السنغال",time:"04:00ص",v:"MetLife Stadium، نيوجيرسي"},
+  {date:"22 يونيو",g:"J",t1:"الأردن",t2:"الجزائر",time:"07:00ص",v:"Levi's Stadium، سانتا كلارا"},
+  {date:"23 يونيو",g:"K",t1:"البرتغال",t2:"أوزبكستان",time:"09:00م",v:"NRG Stadium، هيوستن"},
+  {date:"23 يونيو",g:"L",t1:"إنجلترا",t2:"غانا",time:"12:00ص",v:"Gillette Stadium، فوكسبورو"},
+  {date:"23 يونيو",g:"L",t1:"بنما",t2:"كرواتيا",time:"03:00ص",v:"BMO Field، تورنتو"},
+  {date:"23 يونيو",g:"K",t1:"كولومبيا",t2:"الكونغو الديمقراطية",time:"06:00ص",v:"إستاد أكرون، زاپوپان"},
+  {date:"24 يونيو",g:"B",t1:"سويسرا",t2:"كندا",time:"11:00م",v:"BC Place، فانكوفر"},
+  {date:"24 يونيو",g:"B",t1:"البوسنة",t2:"قطر",time:"11:00م",v:"Lumen Field، سياتل"},
+  {date:"24 يونيو",g:"C",t1:"اسكتلندا",t2:"البرازيل",time:"02:00ص",v:"Hard Rock Stadium، ميامي"},
+  {date:"24 يونيو",g:"C",t1:"المغرب",t2:"هايتي",time:"02:00ص",v:"Mercedes-Benz، أتلانتا"},
+  {date:"24 يونيو",g:"A",t1:"التشيك",t2:"المكسيك",time:"05:00ص",v:"إستاد أزتيكا، مكسيكو سيتي"},
+  {date:"24 يونيو",g:"A",t1:"جنوب أفريقيا",t2:"كوريا الجنوبية",time:"05:00ص",v:"إستاد BBVA، مونتيري"},
+  {date:"25 يونيو",g:"E",t1:"كوراساو",t2:"كوت ديفوار",time:"12:00ص",v:"Lincoln Financial، فيلادلفيا"},
+  {date:"25 يونيو",g:"E",t1:"الإكوادور",t2:"ألمانيا",time:"12:00ص",v:"MetLife Stadium، نيوجيرسي"},
+  {date:"25 يونيو",g:"F",t1:"اليابان",t2:"السويد",time:"03:00ص",v:"AT&T Stadium، أرلينغتون"},
+  {date:"25 يونيو",g:"F",t1:"تونس",t2:"هولندا",time:"03:00ص",v:"Arrowhead Stadium، كانساس سيتي"},
+  {date:"25 يونيو",g:"D",t1:"تركيا",t2:"الولايات المتحدة",time:"06:00ص",v:"SoFi Stadium، لوس أنجلوس"},
+  {date:"25 يونيو",g:"D",t1:"باراغواي",t2:"أستراليا",time:"06:00ص",v:"Levi's Stadium، سانتا كلارا"},
+  {date:"26 يونيو",g:"I",t1:"النرويج",t2:"فرنسا",time:"11:00م",v:"Gillette Stadium، فوكسبورو"},
+  {date:"26 يونيو",g:"I",t1:"السنغال",t2:"العراق",time:"11:00م",v:"BMO Field، تورنتو"},
+  {date:"26 يونيو",g:"H",t1:"الرأس الأخضر",t2:"السعودية",time:"04:00ص",v:"NRG Stadium، هيوستن"},
+  {date:"26 يونيو",g:"H",t1:"الأوروغواي",t2:"إسبانيا",time:"04:00ص",v:"إستاد أكرون، زاپوپان"},
+  {date:"26 يونيو",g:"G",t1:"مصر",t2:"إيران",time:"07:00ص",v:"Lumen Field، سياتل"},
+  {date:"26 يونيو",g:"G",t1:"نيوزيلندا",t2:"بلجيكا",time:"07:00ص",v:"BC Place، فانكوفر"},
+  {date:"27 يونيو",g:"L",t1:"بنما",t2:"إنجلترا",time:"01:00ص",v:"MetLife Stadium، نيوجيرسي"},
+  {date:"27 يونيو",g:"L",t1:"كرواتيا",t2:"غانا",time:"01:00ص",v:"Lincoln Financial، فيلادلفيا"},
+  {date:"27 يونيو",g:"K",t1:"كولومبيا",t2:"البرتغال",time:"03:30ص",v:"Hard Rock Stadium، ميامي"},
+  {date:"27 يونيو",g:"K",t1:"الكونغو",t2:"أوزبكستان",time:"03:30ص",v:"Mercedes-Benz، أتلانتا"},
+  {date:"27 يونيو",g:"J",t1:"الجزائر",t2:"النمسا",time:"06:00ص",v:"Arrowhead Stadium، كانساس سيتي"},
+  {date:"27 يونيو",g:"J",t1:"الأردن",t2:"الأرجنتين",time:"06:00ص",v:"AT&T Stadium، أرلينغتون"},
+];
+
+const knockouts = {
+  r32:[
+    {m:"73",t1:"وصيف A",t2:"وصيف B",date:"28 يونيو",time:"11:00م",v:"SoFi Stadium، لوس أنجلوس"},
+    {m:"76",t1:"أول C",t2:"وصيف F",date:"29 يونيو",time:"09:00م",v:"NRG Stadium، هيوستن"},
+    {m:"74",t1:"أول E",t2:"أفضل ثالث",date:"29 يونيو",time:"12:30ص",v:"Gillette Stadium، فوكسبورو"},
+    {m:"75",t1:"أول F",t2:"وصيف C",date:"30 يونيو",time:"05:00ص",v:"إستاد BBVA، مونتيري"},
+    {m:"78",t1:"وصيف E",t2:"وصيف I",date:"30 يونيو",time:"09:00م",v:"AT&T Stadium، أرلينغتون"},
+    {m:"77",t1:"أول I",t2:"أفضل ثالث",date:"1 يوليو",time:"01:00ص",v:"MetLife Stadium، نيوجيرسي"},
+    {m:"79",t1:"أول A",t2:"أفضل ثالث",date:"1 يوليو",time:"05:00ص",v:"إستاد أزتيكا، مكسيكو سيتي"},
+    {m:"80",t1:"أول L",t2:"أفضل ثالث",date:"1 يوليو",time:"08:00م",v:"Mercedes-Benz، أتلانتا"},
+    {m:"82",t1:"أول G",t2:"أفضل ثالث",date:"2 يوليو",time:"12:00ص",v:"Lumen Field، سياتل"},
+    {m:"81",t1:"أول D",t2:"أفضل ثالث",date:"2 يوليو",time:"04:00ص",v:"Levi's Stadium، سانتا كلارا"},
+    {m:"84",t1:"أول H",t2:"وصيف J",date:"2 يوليو",time:"11:00م",v:"SoFi Stadium، لوس أنجلوس"},
+    {m:"83",t1:"وصيف K",t2:"وصيف L",date:"3 يوليو",time:"03:00ص",v:"BMO Field، تورنتو"},
+    {m:"85",t1:"أول B",t2:"أفضل ثالث",date:"3 يوليو",time:"07:00ص",v:"BC Place، فانكوفر"},
+    {m:"88",t1:"وصيف D",t2:"وصيف G",date:"3 يوليو",time:"10:00م",v:"AT&T Stadium، أرلينغتون"},
+    {m:"86",t1:"أول J",t2:"وصيف H",date:"4 يوليو",time:"02:00ص",v:"Hard Rock Stadium، ميامي"},
+    {m:"87",t1:"أول K",t2:"أفضل ثالث",date:"4 يوليو",time:"05:30ص",v:"Arrowhead Stadium، كانساس سيتي"},
+  ],
+  r16:[
+    {m:"90",t1:"فائز م73",t2:"فائز م75",date:"4 يوليو",time:"09:00م",v:"NRG Stadium، هيوستن"},
+    {m:"89",t1:"فائز م74",t2:"فائز م77",date:"5 يوليو",time:"01:00ص",v:"Lincoln Financial، فيلادلفيا"},
+    {m:"91",t1:"فائز م76",t2:"فائز م79",date:"5 يوليو",time:"11:00م",v:"MetLife Stadium، نيوجيرسي"},
+    {m:"92",t1:"فائز م78",t2:"فائز م80",date:"6 يوليو",time:"03:00ص",v:"Lumen Field، سياتل"},
+    {m:"94",t1:"فائز م81",t2:"فائز م83",date:"6 يوليو",time:"11:00م",v:"SoFi Stadium، لوس أنجلوس"},
+    {m:"93",t1:"فائز م82",t2:"فائز م84",date:"7 يوليو",time:"03:00ص",v:"BC Place، فانكوفر"},
+    {m:"95",t1:"فائز م85",t2:"فائز م87",date:"7 يوليو",time:"11:00م",v:"AT&T Stadium، أرلينغتون"},
+    {m:"96",t1:"فائز م86",t2:"فائز م88",date:"8 يوليو",time:"03:00ص",v:"Arrowhead Stadium، كانساس سيتي"},
+  ],
+  qf:[
+    {m:"QF1",t1:"فائز م89",t2:"فائز م90",date:"9 يوليو",time:"11:00م",v:"MetLife Stadium، نيوجيرسي"},
+    {m:"QF2",t1:"فائز م91",t2:"فائز م92",date:"10 يوليو",time:"03:00ص",v:"SoFi Stadium، لوس أنجلوس"},
+    {m:"QF3",t1:"فائز م93",t2:"فائز م94",date:"10 يوليو",time:"11:00م",v:"AT&T Stadium، أرلينغتون"},
+    {m:"QF4",t1:"فائز م95",t2:"فائز م96",date:"11 يوليو",time:"03:00ص",v:"NRG Stadium، هيوستن"},
+  ],
+  sf:[
+    {m:"SF1",t1:"فائز QF1",t2:"فائز QF2",date:"14 يوليو",time:"11:00م",v:"AT&T Stadium، أرلينغتون"},
+    {m:"SF2",t1:"فائز QF3",t2:"فائز QF4",date:"15 يوليو",time:"03:00ص",v:"MetLife Stadium، نيوجيرسي"},
+  ],
+  third:[{m:"3P",t1:"خاسر SF1",t2:"خاسر SF2",date:"18 يوليو",time:"11:00م",v:"Hard Rock Stadium، ميامي"}],
+  final:[{m:"F",t1:"فائز SF1",t2:"فائز SF2",date:"19 يوليو",time:"11:00م",v:"MetLife Stadium، نيوجيرسي"}],
+};
+
+let currentStage = 'group';
+let currentGroup = 'all';
+
+function setStage(s) {
+  currentStage = s;
+  document.querySelectorAll('.tab').forEach((t,i)=>{
+    const keys = ['group','r32','r16','qf','sf','third','final'];
+    t.classList.toggle('active', keys[i]===s);
+  });
+  document.getElementById('group-filters').style.display = s==='group' ? 'flex' : 'none';
+  render();
+}
+
+function setGroup(g) {
+  currentGroup = g;
+  document.querySelectorAll('.gf-btn').forEach(b=>{
+    b.classList.toggle('active', b.textContent.trim()===(g==='all'?'الكل':g));
+  });
+  render();
+}
+
+function matchCard(m, opts={}) {
+  const gc = opts.group ? GC[opts.group] : null;
+  const badge = opts.group
+    ? `<div class="group-badge" style="background:${gc}22;border:1px solid ${gc};color:${gc}">${opts.group}</div>`
+    : opts.ko
+    ? `<div class="ko-badge">م${m.m}</div>`
+    : '';
+  return `
+  <div class="match-card ${opts.ko?'knockout':''}">
+    ${badge}
+    <div class="match-info">
+      <div class="match-teams">${m.t1} <span class="vs">–</span> ${m.t2}</div>
+      <div class="match-venue">🏟️ ${m.v}</div>
+    </div>
+    <div class="match-time-col">
+      ${m.date?`<div class="match-date-small">${m.date}</div>`:''}
+      <div class="time-badge">${m.time}</div>
+    </div>
+  </div>`;
+}
+
+function render() {
+  const c = document.getElementById('content');
+
+  if (currentStage === 'group') {
+    const list = currentGroup==='all' ? groupMatches : groupMatches.filter(m=>m.g===currentGroup);
+    const byDate = {};
+    list.forEach(m=>{ (byDate[m.date]=byDate[m.date]||[]).push(m); });
+    c.innerHTML = Object.entries(byDate).map(([date,ms])=>`
+      <div class="date-header">
+        <div class="date-pill">📅 ${date}</div>
+        <div class="date-line"></div>
+      </div>
+      ${ms.map(m=>matchCard({t1:m.t1,t2:m.t2,v:m.v,time:m.time,date:''},{group:m.g})).join('')}
+    `).join('');
+    return;
+  }
+
+  if (currentStage === 'final') {
+    c.innerHTML = `
+      <div class="final-hero">
+        <div class="final-icon">🏆</div>
+        <div class="final-title">النهائي الكبير</div>
+        <div class="final-date">19 يوليو 2026 · 11:00 مساءً بتوقيت مكة</div>
+        <div class="final-teams">فائز SF1 ⚔️ فائز SF2</div>
+        <div class="final-venue">🏟️ MetLife Stadium، ايست روذرفورد، نيوجيرسي</div>
+      </div>
+      ${knockouts.final.map(m=>matchCard(m,{ko:true})).join('')}
+    `;
+    return;
+  }
+
+  const list = knockouts[currentStage] || [];
+  c.innerHTML = list.map(m=>matchCard(m,{ko:true})).join('');
+}
+
+render();
+
+// ── التحديث التلقائي للأسماء الحقيقية ──
+// خريطة: مفتاح الـ placeholder → المجموعة والمركز
+const placeholderMap = {
+  "أول A":   {g:"A", rank:1}, "وصيف A":  {g:"A", rank:2},
+  "أول B":   {g:"B", rank:1}, "وصيف B":  {g:"B", rank:2},
+  "أول C":   {g:"C", rank:1}, "وصيف C":  {g:"C", rank:2},
+  "أول D":   {g:"D", rank:1}, "وصيف D":  {g:"D", rank:2},
+  "أول E":   {g:"E", rank:1}, "وصيف E":  {g:"E", rank:2},
+  "أول F":   {g:"F", rank:1}, "وصيف F":  {g:"F", rank:2},
+  "أول G":   {g:"G", rank:1}, "وصيف G":  {g:"G", rank:2},
+  "أول H":   {g:"H", rank:1}, "وصيف H":  {g:"H", rank:2},
+  "أول I":   {g:"I", rank:1}, "وصيف I":  {g:"I", rank:2},
+  "أول J":   {g:"J", rank:1}, "وصيف J":  {g:"J", rank:2},
+  "أول K":   {g:"K", rank:1}, "وصيف K":  {g:"K", rank:2},
+  "أول L":   {g:"L", rank:1}, "وصيف L":  {g:"L", rank:2},
+};
+
+// أسماء الفرق بالعربية
+const teamNameAr = {
+  "Mexico":"المكسيك","South Africa":"جنوب أفريقيا","South Korea":"كوريا الجنوبية","Czech Republic":"التشيك","Czechia":"التشيك",
+  "Canada":"كندا","Bosnia and Herzegovina":"البوسنة والهرسك","Qatar":"قطر","Switzerland":"سويسرا",
+  "Brazil":"البرازيل","Morocco":"المغرب","Haiti":"هايتي","Scotland":"اسكتلندا",
+  "Australia":"أستراليا","Turkey":"تركيا","Türkiye":"تركيا","Germany":"ألمانيا","Curaçao":"كوراساو",
+  "Netherlands":"هولندا","Japan":"اليابان","Ivory Coast":"كوت ديفوار","Côte d'Ivoire":"كوت ديفوار","Ecuador":"الإكوادور","Sweden":"السويد","Tunisia":"تونس",
+  "Spain":"إسبانيا","Cape Verde":"الرأس الأخضر","Belgium":"بلجيكا","Egypt":"مصر","Saudi Arabia":"السعودية","Uruguay":"الأوروغواي","Iran":"إيران","New Zealand":"نيوزيلندا",
+  "France":"فرنسا","Senegal":"السنغال","Iraq":"العراق","Norway":"النرويج","Argentina":"الأرجنتين","Algeria":"الجزائر",
+  "Austria":"النمسا","Jordan":"الأردن","Portugal":"البرتغال","DR Congo":"الكونغو الديمقراطية","England":"إنجلترا","Croatia":"كرواتيا","Ghana":"غانا","Panama":"بنما","Uzbekistan":"أوزبكستان","Colombia":"كولومبيا",
+  "United States":"الولايات المتحدة","USA":"الولايات المتحدة","Paraguay":"باراغواي",
+};
+
+// تخزين ترتيب المجموعات الحقيقي
+let liveStandings = {}; // {A: ["المكسيك","التشيك","كوريا الجنوبية","جنوب أفريقيا"], ...}
+let lastFetch = 0;
+const CACHE_MS = 5 * 60 * 1000; // 5 دقائق
+
+async function fetchStandings() {
+  const now = Date.now();
+  if (now - lastFetch < CACHE_MS && Object.keys(liveStandings).length > 0) return;
+  try {
+    // نستخدم API مجاني للبطولات
+    const res = await fetch('https://api.football-data.org/v4/competitions/WC/standings', {
+      headers: { 'X-Auth-Token': '1f5e4d7b8c9a2e3f6g7h8i9j0k1l2m3n' }
+    });
+    // إذا فشل API نجرب مصدراً آخر
+    throw new Error('try next');
+  } catch(e) {
+    try {
+      // مصدر بديل: ESPN API
+      const res = await fetch('https://site.api.espn.com/apis/v2/sports/soccer/fifa.world/standings');
+      if (!res.ok) throw new Error('ESPN failed');
+      const data = await res.json();
+      parseESPN(data);
+      lastFetch = Date.now();
+      updateKnockouts();
+      render();
+    } catch(e2) {
+      // مصدر ثالث: نجرب fifa.com غير الرسمي
+      try {
+        const res = await fetch('https://api.fifa.com/api/v3/calendar/matches?idCompetition=17&idSeason=278478&idStageType=285063&count=200');
+        if (!res.ok) throw new Error('FIFA failed');
+        const data = await res.json();
+        parseFIFA(data);
+        lastFetch = Date.now();
+        updateKnockouts();
+        render();
+      } catch(e3) {
+        console.log('سيتم التحديث عند توفر الإنترنت');
+      }
+    }
+  }
+}
+
+function parseESPN(data) {
+  try {
+    const groups = data.children || data.standings || [];
+    groups.forEach(group => {
+      const gName = (group.name||group.abbreviation||'').replace('Group ','').trim();
+      if (!gName || gName.length > 1) return;
+      const entries = (group.standings||{}).entries || group.entries || [];
+      liveStandings[gName] = entries
+        .sort((a,b) => (a.stats?.find(s=>s.name==='rank')?.value||99) - (b.stats?.find(s=>s.name==='rank')?.value||99))
+        .map(e => teamNameAr[e.team?.displayName] || teamNameAr[e.team?.name] || e.team?.displayName || '');
+    });
+  } catch(e) {}
+}
+
+function parseFIFA(data) {
+  try {
+    const results = data.Results || data.results || [];
+    const grouped = {};
+    results.forEach(m => {
+      const g = m.GroupName?.replace('Group ','').trim();
+      if (!g || g.length>1) return;
+      if (!grouped[g]) grouped[g] = {};
+      const processTeam = (team, gf, ga, pts) => {
+        const nm = teamNameAr[team.TeamName?.[0]?.Description] || team.TeamName?.[0]?.Description || '';
+        if (!nm) return;
+        if (!grouped[g][nm]) grouped[g][nm] = {pts:0, gd:0};
+        grouped[g][nm].pts += pts;
+        grouped[g][nm].gd += (gf - ga);
+      };
+      const hg = m.HomeTeamScore, ag = m.AwayTeamScore;
+      if (hg == null) return;
+      const hpts = hg>ag?3:hg===ag?1:0, apts = ag>hg?3:ag===hg?1:0;
+      processTeam(m.Home, hg, ag, hpts);
+      processTeam(m.Away, ag, hg, apts);
+    });
+    Object.keys(grouped).forEach(g => {
+      liveStandings[g] = Object.entries(grouped[g])
+        .sort((a,b) => b[1].pts - a[1].pts || b[1].gd - a[1].gd)
+        .map(e => e[0]);
+    });
+  } catch(e) {}
+}
+
+function updateKnockouts() {
+  const stages = ['r32','r16','qf','sf','third','final'];
+  stages.forEach(stage => {
+    knockouts[stage].forEach(match => {
+      ['t1','t2'].forEach(field => {
+        const placeholder = match[field];
+        const info = placeholderMap[placeholder];
+        if (info && liveStandings[info.g] && liveStandings[info.g].length >= info.rank) {
+          const realName = liveStandings[info.g][info.rank - 1];
+          if (realName) match[field] = realName;
+        }
+      });
+    });
+  });
+}
+
+// أيقونة حالة التحديث
+function showSyncStatus(msg, ok) {
+  let el = document.getElementById('sync-status');
+  if (!el) return;
+  el.textContent = msg;
+  el.style.color = ok ? '#4caf50' : '#f0c040';
+  setTimeout(() => { el.textContent = ''; }, 4000);
+}
+
+async function refreshData() {
+  showSyncStatus('⏳ جاري التحديث...', true);
+  await fetchStandings();
+  showSyncStatus(Object.keys(liveStandings).length > 0 ? '✅ تم التحديث' : '⚠️ لا يوجد اتصال', Object.keys(liveStandings).length > 0);
+}
+
+// تحديث تلقائي كل 5 دقائق
+fetchStandings();
+setInterval(fetchStandings, CACHE_MS);
+</script>
+<script>
+if('serviceWorker' in navigator){
+  const swCode = `
+const CACHE='wc2026-v1';
+const FILES=['/'];
+self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES))));
+self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request).catch(()=>caches.match('/'))) ));
+  `;
+  const blob = new Blob([swCode],{type:'application/javascript'});
+  navigator.serviceWorker.register(URL.createObjectURL(blob)).catch(()=>{});
+}
+</script>
+<script>
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  deferredPrompt = e;
+  document.getElementById('install-btn').style.display = 'flex';
+});
+window.addEventListener('appinstalled', () => {
+  document.getElementById('install-btn').style.display = 'none';
+});
+function installApp() {
+  if(deferredPrompt) {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then(() => { deferredPrompt = null; });
+  }
+}
+</script>
+</body>
+</html>
